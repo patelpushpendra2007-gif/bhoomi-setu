@@ -1,0 +1,50 @@
+{
+  "name": "bhoomi-setu-prototype",
+  "version": "3.0.0",
+  "description": "BHOOMI-SETU (भूमि-सेतु) — Unified National Digital Land Acquisition & Farmer Livelihood Ecosystem (React + Express + SQLite + JWT + Real RFCTLARR/ULPIN/GIS/PFMS Models)",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "vite build",
+    "build:vercel": "vite build && node scripts/build-vercel-output.js",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "esbuild": "^0.24.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.21"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "govtech",
+    "agritech",
+    "viksit-bharat-2047",
+    "rfctlarr-2013",
+    "ulpin",
+    "bhu-aadhaar",
+    "pfms-dbt",
+    "pm-gatishakti",
+    "pmkvy-4",
+    "bhoomi-setu"
+  ],
+  "author": "BhoomiSetu Innovation Team",
+  "license": "MIT"
+}
