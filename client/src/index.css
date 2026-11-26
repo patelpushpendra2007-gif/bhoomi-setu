@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Public Sans', 'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Administrative Modernism: clean structural surfaces with hairline borders */
+.gov-card {
+  @apply bg-white border border-slate-200 rounded-xl shadow-[0_1px_2px_rgba(15,23,42,0.04)];
+}
+
+.gov-inset {
+  @apply bg-[#F7F9FB] border border-slate-200/90 rounded-lg;
+}
+
+.gov-badge {
+  @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[11px] font-semibold tracking-tight border;
+}
+
+.gov-input {
+  @apply w-full px-3 py-2 text-sm bg-white border border-slate-300 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900/15 focus:border-slate-900 transition-colors;
+}
+
+.gov-btn-primary {
+  @apply inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-white hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.gov-btn-emerald {
+  @apply inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-[#047857] text-white hover:bg-[#065F46] disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.gov-btn-amber {
+  @apply inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-[#C2410C] text-white hover:bg-[#9A3412] disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+.gov-btn-outline {
+  @apply inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+@keyframes kmlSweep {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.gis-scan-beam {
+  animation: kmlSweep 1.5s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "BHOOMI-SETU (भूमि-सेतु)",
+  "short_name": "BhoomiSetu",
+  "description": "Unified National Digital Land Acquisition & Farmer Livelihood Ecosystem — 28 States & 8 UTs",
+  "start_url": "/login",
+  "display": "standalone",
+  "background_color": "#f7f9fb",
+  "theme_color": "#065f46",
+  "icons": []
+}
